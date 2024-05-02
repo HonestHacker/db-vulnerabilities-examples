@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Top secret network</title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="credentials">
+            <h1>Top secret hacker place!</h1>
+            <hr>
+            <form method="POST" action="/login">
+                <input name="login" placeholder="Wh47'5 y0ur n1ck, h4x0r?"><br>
+                <input name="password" type="password" placeholder="Wh47'5 y0ur p455w0rd?"><br>
+                <input type="submit" value="Ch3ck!">
+            </form>
+            {% if noaccess %}
+                <p style='color: red;'>You don't have an access to the system!</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
